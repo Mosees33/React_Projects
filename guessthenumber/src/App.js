@@ -2,7 +2,7 @@
 import './App.css';
 import Result from './Result';
 import { useState } from 'react';
-const secretNumber =Math.floor((Math.random() * 10))+1
+const secretNumber = Math.floor(Math.random() * 10) + 1
 
 function App() {
   const [ Term,setTerm ] = useState({})
@@ -24,7 +24,7 @@ function App() {
       type='text'
       onChange={handleChange}
       />
-      <Result secretNumber = {secretNumber} Term= {Term}/>
+      <Result secretNumber = {secretNumber} Term = {Term}/>
     </div>
   );
 }
